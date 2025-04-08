@@ -1,0 +1,10 @@
+name = "cloudflare-workers-d1-template"
+main = "./src/workers.ts"
+compatibility_date = "2022-11-26"
+
+[[ d1_databases ]]
+migrations_dir = "./src/infra/repository/d1/migrations"
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "usuarios_db"
+database_id = "32a21564-f828-4f8a-bae0-e18c9682d6c7"
+preview_database_id = "32a21564-f828-4f8a-bae0-e18c9682d6c7" # can be the same as database_id
